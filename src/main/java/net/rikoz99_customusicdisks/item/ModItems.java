@@ -6,7 +6,6 @@ import net.rikoz99_customusicdisks.CustoMusicDisks;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import org.apache.commons.io.comparator.DefaultFileComparator;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
