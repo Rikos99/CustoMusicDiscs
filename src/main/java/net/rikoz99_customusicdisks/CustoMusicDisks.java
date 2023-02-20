@@ -22,6 +22,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.rikoz99_customusicdisks.item.ModCreativeModeTabs;
 import net.rikoz99_customusicdisks.item.ModItems;
 import org.slf4j.Logger;
 
@@ -74,6 +75,10 @@ public class CustoMusicDisks
     private void addCreative(CreativeModeTabEvent.BuildContents event)
     {
         if (event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES)
+        {
+            event.accept(ModItems.CUSTOM_DISK);
+        }
+        if (event.getTab() == ModCreativeModeTabs.MUSIC_DISC_TAB)
         {
             event.accept(ModItems.CUSTOM_DISK);
         }
